@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; background: #f5f7fa; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f5f7fa; color: #14263f; font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+::selection { background: #dceafe; color: #14263f; }
+
+@layer components {
+  .container-shell { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.22em] text-accent; }
+  .section-title { @apply font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl; }
+  .surface-card { @apply rounded-2xl border border-slate-200 bg-white shadow-soft; }
+  .button-primary { @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-700; }
+  .button-secondary { @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink; }
+}
