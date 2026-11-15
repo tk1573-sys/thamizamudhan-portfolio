@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ArrowUpRight, Github, ExternalLink, Laptop, Cloud, Code2 } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, Github, ExternalLink, Cloud, Code2 } from "lucide-react";
 import { projects, additionalWork } from "@/data/projects";
 
 export const metadata: Metadata = { title: "Projects & Deployments" };
@@ -40,6 +41,6 @@ export default function ProjectsPage() {
       <h2 className="section-title mt-3 text-3xl">More work to document</h2>
       <div className="mt-6 grid gap-3 md:grid-cols-3">{additionalWork.map((item) => <div key={item} className="rounded-xl border border-slate-200 bg-white p-5 text-sm leading-6 text-slate-600"><Code2 className="mb-3 text-accent" size={20} />{item}</div>)}</div>
     </div>
-    <p className="mt-10 text-xs leading-6 text-slate-500">Deployment status is based on repository documentation available during this update. A link is labelled live only where a concrete production URL is documented; service health and uptime should be checked separately.</p>
+    <Link href="/mini-projects" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-accent">Explore mini projects and technical experiments <ArrowUpRight size={16}/></Link>\n    <p className="mt-10 text-xs leading-6 text-slate-500">Deployment status is based on repository documentation available during this update. A link is labelled live only where a concrete production URL is documented; service health and uptime should be checked separately.</p>
   </section>;
 }
