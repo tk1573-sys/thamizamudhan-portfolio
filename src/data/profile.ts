@@ -29,10 +29,10 @@ export const profile = {
     },
     {
       degree: "B.E. – Electronics and Communication Engineering",
-      institution: "Institution details to be confirmed",
       status: "Completed",
     },
   ],
+  certifications: ["GitHub Copilot certification – completed"],
   researchInterests: [
     "Generative and Multimodal AI",
     "Wearable computing and behavioural analytics",
