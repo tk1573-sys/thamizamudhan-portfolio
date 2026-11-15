@@ -7,6 +7,7 @@ const pathways = [
   { icon: BrainCircuit, title: "AI & Software", text: "Applied AI, Generative AI, and practical software projects.", href: "/projects", tag: "Innovation" },
   { icon: GraduationCap, title: "Academia & Teaching", text: "Academic learning, teaching, mentoring, and curriculum interests.", href: "/teaching", tag: "Education" },
   { icon: Microscope, title: "Research", text: "Multimodal AI, wearable computing, and human-centered intelligent systems.", href: "/research", tag: "Research" },
+  { icon: BriefcaseBusiness, title: "Freelance & Teaching", text: "IT consulting, software projects, online tuition, and technical mentoring.", href: "/services", tag: "Independent work" },
 ];
 const highlights = [
   { icon: BriefcaseBusiness, label: "Industry", value: "TCS · Data Engineering" },
@@ -44,7 +45,7 @@ export default function HomePage() {
       </div>
     </section>
     <section className="container-shell py-20">
-      <div className="max-w-2xl"><p className="eyebrow">One profile, three dimensions</p><h2 className="section-title mt-4">A journey across industry, education, and innovation.</h2><p className="mt-4 leading-7 text-slate-600">Explore the areas that shape my professional work and academic interests.</p></div>
+      <div className="max-w-2xl"><p className="eyebrow">One profile, five pathways</p><h2 className="section-title mt-4">A journey across industry, education, and innovation.</h2><p className="mt-4 leading-7 text-slate-600">Explore the areas that shape my professional work and academic interests.</p></div>
       <div className="mt-10 grid gap-5 sm:grid-cols-2">{pathways.map(({ icon: Icon, title, text, href, tag }) => <Link key={title} href={href} className="surface-card group p-7 transition duration-300 hover:-translate-y-1 hover:border-slate-300"><div className="flex items-center justify-between"><span className="rounded-xl bg-blue-50 p-3 text-accent"><Icon size={24} /></span><span className="text-xs font-bold uppercase tracking-wider text-slate-400">{tag}</span></div><h3 className="mt-7 font-display text-xl font-bold text-ink">{title}</h3><p className="mt-3 min-h-14 text-sm leading-6 text-slate-600">{text}</p><span className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-accent">Explore section <ArrowUpRight size={15} /></span></Link>)}</div>
     </section>
     <section className="bg-white py-20"><div className="container-shell"><div className="max-w-2xl"><p className="eyebrow">Professional snapshot</p><h2 className="section-title mt-4">The experience behind the work.</h2></div><div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{highlights.map(({ icon: Icon, label, value }) => <div key={label} className="rounded-2xl border border-slate-200 bg-paper p-6"><Icon className="text-accent" size={23} /><p className="mt-6 text-xs font-bold uppercase tracking-wider text-slate-400">{label}</p><p className="mt-2 font-semibold leading-6 text-ink">{value}</p></div>)}</div></div></section>
