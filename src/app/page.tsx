@@ -34,7 +34,7 @@ export default function HomePage() {
         <div className="relative">
           <div className="rounded-[2rem] border border-white/15 bg-white/[0.07] p-5 shadow-2xl backdrop-blur">
             <div className="rounded-2xl bg-[#F1F5F9] p-6 text-ink sm:p-8">
-              <div className="flex items-center justify-between"><span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Current chapter</span><span className="h-2.5 w-2.5 rounded-full bg-emerald-500" /></div>
+              <div className="flex items-center justify-between"><span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Upcoming appointment</span><span className="rounded-full bg-blue-100 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-700">Incoming</span></div>
               <div className="mt-8"><p className="text-sm font-semibold text-accent">{profile.appointment.institution}</p><h2 className="mt-2 font-display text-3xl font-bold leading-tight">{profile.appointment.role}</h2><p className="mt-3 text-sm text-slate-600">{profile.appointment.location}</p><div className="mt-6 rounded-xl border border-slate-200 bg-white p-4"><p className="text-xs font-bold uppercase tracking-wider text-slate-400">Academic transition</p><p className="mt-1 font-semibold text-ink">{profile.appointment.timing}</p></div></div>
               <div className="mt-8 flex items-center justify-between border-t border-slate-200 pt-5"><span className="text-xs text-slate-500">Industry · Academia · Research</span><GraduationCap className="text-accent" size={24} /></div>
             </div>
