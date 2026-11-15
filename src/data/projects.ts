@@ -26,7 +26,7 @@ export const projects: Project[] = [
     summary: "An emotional wellness support system exploring longitudinal emotion analysis, distress-risk scoring, pattern tracking, forecasting, explainability, and safety-aware routing.",
     highlights: ["Multi-emotion text analysis and longitudinal tracking", "Risk scoring, trend analysis and forecasting experiments", "Explainability and configurable support/guardian workflows", "Repository includes a Streamlit prototype and a newer FastAPI/Next.js architecture"],
     repository: "https://github.com/tk1573-sys/AI-wellness-Buddy",
-    deployment: "Deployment architecture and guides exist for Render (backend) and Vercel (frontend). Public production URLs are not yet verified; do not present placeholder URLs as live deployments.",
+    deployment: "Deployment architecture and guides exist for Render (backend) and Vercel (frontend). Public production URLs are not yet verified; placeholder URLs are not presented as live deployments.",
     status: "Deployment setup",
   },
   {
@@ -38,20 +38,10 @@ export const projects: Project[] = [
     deployment: "Windows desktop MVP. The repository documents how to build a portable executable folder; this is not a hosted web application.",
     status: "Desktop MVP",
   },
-  {
-    name: "Thamizh App",
-    category: "Web application · React · PWA",
-    summary: "The Life Command Centre web application, maintained as a separate repository and deployed as a Progressive Web App.",
-    highlights: ["Mobile-first interface", "Career, learning and research planning", "PWA installation support"],
-    repository: "https://github.com/tk1573-sys/thamizh-app",
-    liveUrl: "https://thamizh-app.vercel.app",
-    deployment: "Live deployment documented by the project repository.",
-    status: "Live",
-  },
 ];
 
 export const additionalWork = [
-  "UG final-year engineering project – project title, contribution and evidence to be added",
-  "M.Tech Data Science project – AI Emotional Wellness Buddy; final project details and report to be added",
-  "Mini projects and technical experiments – curated from GitHub repositories",
+  "UG final-year engineering project – title, individual contribution and evidence to be added",
+  "M.Tech Data Science project – AI-Based Emotional Wellness Buddy; final report and evaluation evidence to be added",
+  "Mini projects and technical experiments – curate repository links and short demonstrations",
 ];
