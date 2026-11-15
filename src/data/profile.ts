@@ -26,6 +26,7 @@ export const profile = {
       degree: "M.Tech – Data Science",
       institution: "SRM Institute of Science and Technology",
       status: "Completed, 2026",
+      result: "CGPA 9.31",
     },
     {
       degree: "B.E. – Electronics and Communication Engineering",
