@@ -34,7 +34,7 @@ export const profile = {
     },
   ],
   certifications: ["GitHub Copilot certification – completed"],
-  researchInterests: [
+  doctoralResearchTitle: "Human-Centered Explainable AI for Early Healthcare in Children with Special Needs",\n  researchInterests: [
     "Generative and Multimodal AI",
     "Wearable computing and behavioural analytics",
     "Healthcare analytics and human-centred AI",
